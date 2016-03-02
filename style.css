@@ -1,0 +1,46 @@
+.mainBackground
+{
+	background-color: grey;
+}
+
+.canvasBackground
+{
+	//background-color: white;
+	//canvas, img { display:block; margin:1em auto; border:1px solid black; }
+    //canvas { background:url(lotsalasers.jpg) }
+	//display:block; margin:1em auto; border:1px solid black; 
+    background:url(img/dice.jpg);
+	//position: absolute; left: 0px; top: 0px;
+	//opacity: 0.5;
+}
+
+.button 
+{
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+	width: 70px;
+    height: 30px;
+}
+
+.centerise 
+{
+    //display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.canvasAround
+{
+	//margin: 10%;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	overflow: hidden;
+	display: block;
+    //padding-right: 10%;
+    //padding-left: 10%;
+}
