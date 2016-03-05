@@ -5,13 +5,7 @@
 
 .canvasBackground
 {
-	//background-color: white;
-	//canvas, img { display:block; margin:1em auto; border:1px solid black; }
-    //canvas { background:url(lotsalasers.jpg) }
-	//display:block; margin:1em auto; border:1px solid black; 
     background:url(img/dice.jpg);
-	//position: absolute; left: 0px; top: 0px;
-	//opacity: 0.5;
 }
 
 .button 
@@ -28,19 +22,13 @@
 
 .centerise 
 {
-    //display: block;
-    margin: 0 auto;
     text-align: center;
 }
 
 .canvasAround
 {
-	//margin: 10%;
-	width: 100%;
-	height: 100%;
-	border: 0;
+	width: 100%
+	height: auto;
 	overflow: hidden;
 	display: block;
-    //padding-right: 10%;
-    //padding-left: 10%;
 }
