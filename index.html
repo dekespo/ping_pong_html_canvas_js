@@ -2,20 +2,41 @@
 
 <html>
 	<head>
-		<title> 2D HTML CANVAS GAME </title>
+		<title> PING PONG HTML CANVAS GAME </title>
 		<link rel="stylesheet" href="style.css"/>
-		<script type="text/javascript" src="main.js"> </script>
+		<script type="text/javascript" src="js/main.js"> </script>
+		<script type="text/javascript" src="js/draw.js"> </script>
+		<script type="text/javascript" src="js/window.js"> </script>
+		<script type="text/javascript" src="js/other.js"> </script>
+		<script type="text/javascript" src="js/animation.js"> </script>
+		<script type="text/javascript" src="js/mouse.js"> </script>
+		<script type="text/javascript" src="js/ai.js"> </script>
+		<script type="text/javascript" src="js/OO.js"> </script>
+		<script type="text/javascript" src="js/result.js"> </script>
+		<script type="text/javascript" src="js/options.js"> </script>
+		<script type="text/javascript" src="js/resizeCanvas.js"> </script>
 	</head>
 	<body class="mainBackground">
-		<div class="canvasAround centerise">
-			<canvas class="centerise canvasBackground" id="canvas">
+		<div class="canvasAround" id="canvasResize">
+			<canvas class="canvasBackground" id="canvas">
 				your browser doesn't support canvas!
 			</canvas>
 		</div>
 		<script> main() </script> 
-		<div class="centerise">
-			<input class="button" type="button" value= "START" onclick="startButton()"></input>
-			<input class="button" type="button" value= "STOP" onclick="stopButton()"></input>
+		<select id="selectSize" onchange="selectOptionSize()">
+			<option value=1.0>thick</option>
+			<option value=2.5 selected="selected">normal</option>
+			<option value=4.0>thin</option>
+		</select>
+		<select id="selectLevel" onchange="selectOptionLevel()">
+			<option value="easy">Easy</option>
+			<option value="artista" selected="selected">Artista</option>
+			<option value="medium">Medium</option>
+			<option value="hard">Hard</option>
+			<option value="immortal">Immortal</option>
+		</select>
+		<div>
+			<p> Click inside the box to play or pause </p>
 		</div>
 	</body>
 </html>

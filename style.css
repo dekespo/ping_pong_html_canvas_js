@@ -1,3 +1,8 @@
+body
+{
+    text-align: center;
+}
+
 .mainBackground
 {
 	background-color: grey;
@@ -5,30 +10,47 @@
 
 .canvasBackground
 {
-    background:url(img/dice.jpg);
+    background:green;
 }
 
-.button 
+@media (max-width: 1000px)
 {
-    background-color: #000000;
-    color: #FFFFFF;
-    padding: 10px;
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-	width: 70px;
-    height: 30px;
-}
-
-.centerise 
-{
-    text-align: center;
+	.canvasBackground
+	{
+		width: 100%;
+	}
 }
 
 .canvasAround
 {
-	width: 100%
-	height: auto;
 	overflow: hidden;
-	display: block;
+	padding: 10px;
 }
+
+p
+{
+	background: white;
+	font-weight: bold;
+}
+
+#canvasResize
+{
+	background: black;
+}
+
+#canvasResize.resizable
+{
+	position: relative;
+}
+
+#canvasResize .resizer 
+{ 
+	width: 10px; 
+	height: 10px; 
+	background: blue; 
+	position: absolute; 
+	right: 0; 
+	bottom: 0; 
+	cursor: se-resize; 
+}
+
